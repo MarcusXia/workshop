@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Panel headerText="CRUD Service Selections" expandable="true"
+		expanded="true">
+		<List width="100%">
+			<InputListItem label="Service Path">
+				<Input id="cPath" value="{/cPath}" />
+			</InputListItem>
+			<InputListItem label="Entity Name">
+				<Input id="cEntity" value="{/cEntity}" />
+			</InputListItem>
+		</List>
+	</Panel>
+	<Panel headerText="CRUD Service Selections" expandable="true"
+		expanded="true">
+		<List width="100%">
+			<InputListItem label="First Name">
+				<Input id="fName" value="{/fName}" />
+			</InputListItem>
+			<InputListItem label="Last Name">
+				<Input id="lName" value="{/lName}" />
+			</InputListItem>
+			<InputListItem label="E-Mail">
+				<Input id="email" value="{/email}" />
+			</InputListItem>
+		</List>
+		<Button text="Execute Service" press="callUserService" />
+	</Panel>
+ 	 <core:Fragment fragmentName="odataView.CreateTable" type="JS" />	
+</core:FragmentDefinition>

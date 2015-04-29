@@ -1,0 +1,6 @@
+{
+"name" : "Purchase Order Worklist",
+"specXMLURL" : "/workshop-uis/uis/xml/table.xml" ,
+"description": "",
+"icon" : ""
+}

@@ -1,0 +1,578 @@
+{
+	"exercises" : [{
+			"key" : "ST",
+			"text" : "Week 1",
+			"steps" : [{
+					"key" : "ST_3",
+					"text" : "W1U7.1 Access Grant",
+					"package" : "workshop.template",
+					"object" : "accessGrant.sql",
+					"extension" : "txt"
+				}, {
+					"key" : "ST_4",
+					"text" : "W1U7.2 Access Grant EXECUTE",
+					"package" : "workshop.template",
+					"object" : "accessGrant2",
+					"extension" : "txt"
+				}, {
+					"key" : "ST_5",
+					"text" : "W1U7.3 Access Grant DEBUG",
+					"package" : "workshop.template",
+					"object" : "accessGrant3",
+					"extension" : "txt"
+				}
+			]
+		}, {
+			"key" : "DB",
+			"text" : "Week 2",
+			"steps" : [{
+					"key" : "DB_1",
+					"text" : "W2U2.1 Types",
+					"package" : "workshop.template",
+					"object" : "types",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_2",
+					"text" : "W2U2.2 Structure",
+					"package" : "workshop.template",
+					"object" : "structure",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_3",
+					"text" : "W2U3.1 Header",
+					"package" : "workshop.template",
+					"object" : "header",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_4",
+					"text" : "W2U3.2 Item",
+					"package" : "workshop.template",
+					"object" : "item",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_5",
+					"text" : "W2U3.3 View",
+					"package" : "workshop.template",
+					"object" : "itemView",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_6",
+					"text" : "W2U1.1 Sequence Definition",
+					"package" : "workshop.template",
+					"object" : "sequence",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_7",
+					"text" : "W2U1.2 Truncate ",
+					"package" : "workshop.template",
+					"object" : "truncateHeaderItem",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_8",
+					"text" : "W2U1.3 Header CSV",
+					"package" : "workshop.template",
+					"object" : "header_csv",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_9",
+					"text" : "W2U1.4 Item CSV",
+					"package" : "workshop.template",
+					"object" : "item_csv",
+					"extension" : "txt"
+				}, {
+					"key" : "DB_10",
+					"text" : "W2U1.5 Table Import Configuration",
+					"package" : "workshop.template",
+					"object" : "hdbti",
+					"extension" : "txt"
+				},{
+					"key" : "SCAL1",
+					"text" : "W2U4.1 Scripted Calc View",
+					"package" : "workshop.template",
+					"object" : "SCalcView",
+					"extension" : "txt"
+				}
+			]
+		}, {
+			"key" : "SS",
+			"text" : "Week 3",
+			"steps" : [{
+					"key" : "SS_1",
+					"text" : "W3U1.1 Procedures - Table Type",
+					"package" : "workshop.template",
+					"object" : "procedureType",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_2",
+					"text" : "W3U1.2 Procedures - Procedure Code",
+					"package" : "workshop.template",
+					"object" : "procedureCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_3",
+					"text" : "W3U1.3 Procedures - Call Statement",
+					"package" : "workshop.template",
+					"object" : "procedureCall",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_4",
+					"text" : "W3U1.4 Imperative Logic - Table Type",
+					"package" : "workshop.template",
+					"object" : "imperativeProcedureType",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_5",
+					"text" : "W3U1.5 Imperative Logic - Procedure Code",
+					"package" : "workshop.template",
+					"object" : "imperativeProcedureCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_6",
+					"text" : "W3U1.6 Imperative Logic - Call Statement",
+					"package" : "workshop.template",
+					"object" : "imperativeProcedureCall",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_7",
+					"text" : "W3U1.7 Arrays - Procedure Code",
+					"package" : "workshop.template",
+					"object" : "arraysProcedureCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_8",
+					"text" : "W3U1.8 Arrays - Call Statement",
+					"package" : "workshop.template",
+					"object" : "arraysProcedureCall",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_9",
+					"text" : "W3U1.9 Dynamic Filtering - Procedure Code",
+					"package" : "workshop.template",
+					"object" : "dynamicFilteringProcedureCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_10",
+					"text" : "W3U1.10 Dynamic Filtering - Call Statement",
+					"package" : "workshop.template",
+					"object" : "dynamicFilteringProcedureCall",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_15",
+					"text" : "W3U2.1 Triggers - Table Definitions",
+					"package" : "workshop.template",
+					"object" : "triggerCDSFile",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_16",
+					"text" : "W3U2.2 Triggers - Trigger on Insert Code",
+					"package" : "workshop.template",
+					"object" : "triggerTriggerOnInsertCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_17",
+					"text" : "W3U2.3 Triggers - Insert Statement",
+					"package" : "workshop.template",
+					"object" : "triggerInsert",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_18",
+					"text" : "W3U2.4 Triggers - Select Statements",
+					"package" : "workshop.template",
+					"object" : "triggerSelect",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_28",
+					"text" : "W3U2.5 Triggers - Trigger on Update Code ",
+					"package" : "workshop.template",
+					"object" : "triggerTriggerOnUpdateCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_29",
+					"text" : "W3U2.6 Triggers - Update Statement",
+					"package" : "workshop.template",
+					"object" : "triggerUpdate",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_19",
+					"text" : "W3U3.1 Exception Handling - Procedure Code",
+					"package" : "workshop.template",
+					"object" : "exceptionHandlingProcedureCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_20",
+					"text" : "W3U3.2 Exception Handling - Call Statement",
+					"package" : "workshop.template",
+					"object" : "exceptionHandlingProcedureCall",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_21",
+					"text" : "W3U1.11 Cursors & Loops - Procedure Code",
+					"package" : "workshop.template",
+					"object" : "cursorProcedureCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_22",
+					"text" : "W3U1.12 Cursors & Loops - Call Statement",
+					"package" : "workshop.template",
+					"object" : "cursorProcedureCall",
+					"extension" : "txt"
+				},  {
+					"key" : "SS_11",
+					"text" : "W3U4.1 Table UDF - Function Code",
+					"package" : "workshop.template",
+					"object" : "tableUDFFunctionCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_12",
+					"text" : "W3U4.2 Table UDF - Select Statement",
+					"package" : "workshop.template",
+					"object" : "tableUDFSelect",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_13",
+					"text" : "W3U5.1 Scalar UDF - Function Code",
+					"package" : "workshop.template",
+					"object" : "scalarUDFFunctionCode",
+					"extension" : "txt"
+				}, {
+					"key" : "SS_14",
+					"text" : "W3U5.2 Scalar UDF - Select Statement",
+					"package" : "workshop.template",
+					"object" : "scalarUDFSelect",
+					"extension" : "txt"
+				}
+			]
+		}, {
+			"key" : "OD",
+			"text" : "Week4",
+			"steps" : [{
+					"key" : "OD_1",
+					"text" : "W4U1.1 Business Partners xsodata",
+					"package" : "workshop.template",
+					"object" : "businessPartners",
+					"extension" : "txt"
+				}, {
+					"key" : "HW_1",
+					"text" : "W4U2.1 Hello World View",
+					"package" : "workshop.template",
+					"object" : "HelloWorld.view",
+					"extension" : "txt"
+				}, {
+					"key" : "HW_2",
+					"text" : "W4U2.2 Language Resource Loader",
+					"package" : "workshop.template",
+					"object" : "locale",
+					"extension" : "txt"
+				},{
+					"key" : "OUI_1",
+					"text" : "W4U2.3 odataBasic View",
+					"package" : "workshop.template",
+					"object" : "odataBasic.view",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_2",
+					"text" : "W4U2.4 Model Implementation",
+					"package" : "workshop.template",
+					"object" : "odataBasicModelImpl",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_3",
+					"text" : "W4U2.5 Model Bind/Sort",
+					"package" : "workshop.template",
+					"object" : "odataBasicBindSort",
+					"extension" : "txt"
+				}, {
+					"key" : "OD_2",
+					"text" : "W4U3.1 PO xsodata",
+					"package" : "workshop.template",
+					"object" : "purchaseOrders",
+					"extension" : "txt"
+				}, {
+					"key" : "OD_3",
+					"text" : "W4U4.1 User xsodata",
+					"package" : "workshop.template",
+					"object" : "users",
+					"extension" : "txt"
+				}, {
+					"key" : "OD_4",
+					"text" : "W4U4.2 User2 xsodata",
+					"package" : "workshop.template",
+					"object" : "users2",
+					"extension" : "txt"
+				},{
+					"key" : "OUI_5",
+					"text" : "W4U4.3 OData CRUD View",
+					"package" : "workshop.template",
+					"object" : "odataCRUD.view",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_6",
+					"text" : "W4U4.4 callUserService",
+					"package" : "workshop.template",
+					"object" : "callUserService",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_7",
+					"text" : "W4U4.5 updateService",
+					"package" : "workshop.template",
+					"object" : "updateService",
+					"extension" : "txt"
+				},{
+					"key" : "OUI_4",
+					"text" : "W4U5.1 OData Metadata",
+					"package" : "workshop.template",
+					"object" : "odataBasicMetaData",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_A",
+					"text" : "W4U5.2 businessPartnerExt",
+					"package" : "workshop.template",
+					"object" : "businessPartnersExt",
+					"extension" : "txt"
+				},{
+					"key" : "OUI_8",
+					"text" : "W4U6.1 OData Batch View",
+					"package" : "workshop.template",
+					"object" : "odataCRUDBatchView",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_10",
+					"text" : "W4U6.2 OData Batch Controller",
+					"package" : "workshop.template",
+					"object" : "odataCRUDBatchController",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_11",
+					"text" : "W4U6.3 businessPartnersAddresses XSODATA",
+					"package" : "workshop.template",
+					"object" : "businessPartnersAddresses",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_12",
+					"text" : "W4U6.4 bp_create_before_exit",
+					"package" : "workshop.template",
+					"object" : "bp_create_before_exit",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_13",
+					"text" : "W4U6.5 address_create_before_exit",
+					"package" : "workshop.template",
+					"object" : "address_create_before_exit",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_14",
+					"text" : "W4U6.6 assocation_create_exit",
+					"package" : "workshop.template",
+					"object" : "assocation_create_exit",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_15",
+					"text" : "W4U6.7 CSRF",
+					"package" : "workshop.template",
+					"object" : "csrf",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_16",
+					"text" : "W4U6.8 odataDeep View",
+					"package" : "workshop.template",
+					"object" : "odataDeepView",
+					"extension" : "txt"
+				}, {
+					"key" : "OUI_17",
+					"text" : "W4U6.9 odataDeep Controller",
+					"package" : "workshop.template",
+					"object" : "odataDeepController",
+					"extension" : "txt"
+				}
+			]
+		}, {
+			"key" : "XSJS",
+			"text" : "Week 5",
+			"steps" : [{
+					"key" : "XSJS_1",
+					"text" : "W5U1.1 Hello World xsjs",
+					"package" : "workshop.template",
+					"object" : "HelloWorldXSJS",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_2",
+					"text" : "W5U1.2  exercise xsjs",
+					"package" : "workshop.template",
+					"object" : "exercise_xsjs",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_1",
+					"text" : "W5U2.1 xsjsMultiply View",
+					"package" : "workshop.template",
+					"object" : "xsjsMultiply.view",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_2",
+					"text" : "W5U2.2 onLiveChange",
+					"package" : "workshop.template",
+					"object" : "onLiveChange",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_3",
+					"text" : "W5U2.3 onCompleteMultiply",
+					"package" : "workshop.template",
+					"object" : "onCompleteMultiply",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_4",
+					"text" : "W5U2.4 onErrorCall",
+					"package" : "workshop.template",
+					"object" : "onErrorCall",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_5",
+					"text" : "W5U2.5 xsjsRepository View",
+					"package" : "workshop.template",
+					"object" : "xsjsRepository.view",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_6",
+					"text" : "W5U2.6 xsjsRepository Controller",
+					"package" : "workshop.template",
+					"object" : "xsjsRepository.controller",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_7",
+					"text" : "W5U2.7 loadObjectFilter",
+					"package" : "workshop.template",
+					"object" : "loadObjectFilter",
+					"extension" : "txt"
+				}, {
+					"key" : "XUI_8",
+					"text" : "W5U2.8 onLoadObjFilter",
+					"package" : "workshop.template",
+					"object" : "onLoadObjFilter",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_3",
+					"text" : "W5U4.1 xshttpdest",
+					"package" : "workshop.template",
+					"object" : "images_xshttpdest",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_4",
+					"text" : "W5U4.2 searchImages xsjs",
+					"package" : "workshop.template",
+					"object" : "searchImages",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_5",
+					"text" : "W5U5.1 businessPartner xsjs",
+					"package" : "workshop.template",
+					"object" : "businessPartners_xsjs1",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_6",
+					"text" : "W5U5.2 Call procedure using $.db API",
+					"package" : "workshop.template",
+					"object" : "businessPartners_xsjs2",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_7",
+					"text" : "W5U5.3 Procedure library import",
+					"package" : "workshop.template",
+					"object" : "businessPartners_xsjs3",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJS_8",
+					"text" : "W5U5.4 Call procedure using JS library",
+					"package" : "workshop.template",
+					"object" : "businessPartners_xsjs4",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJOB_1",
+					"text" : "W5U6.1 XSJOB XSJS",
+					"package" : "workshop.template",
+					"object" : "xsjob1",
+					"extension" : "txt"
+				}, {
+					"key" : "XSJOB_2",
+					"text" : "W5U6.2 XSJOB SQLScript",
+					"package" : "workshop.template",
+					"object" : "xsjob2",
+					"extension" : "txt"
+				}
+			]
+		}, {
+			"key" : "UIS",
+			"text" : "Week 6",
+			"steps" : [{
+					"key" : "UIS_1",
+					"text" : "W6U1.1 Sample XML",
+					"package" : "workshop.template",
+					"object" : "sample",
+					"extension" : "xml"
+				}
+			]
+		}, {
+			"key" : "UIS2",
+			"text" : "Week7",
+			"steps" : [{
+					"key" : "UIS2_1",
+					"text" : "W7.1 Table HTML",
+					"package" : "workshop.template",
+					"object" : "uisTable",
+					"extension" : "txt"
+				}, {
+					"key" : "UIS2_2",
+					"text" : "W7.2 Specification XML",
+					"package" : "workshop.template",
+					"object" : "uisXML2",
+					"extension" : "txt"
+				}, {
+					"key" : "UIS2_3",
+					"text" : "W7.3 Table JS",
+					"package" : "workshop.template",
+					"object" : "uisTableJs",
+					"extension" : "txt"
+				}, {
+					"key" : "UIS2_4",
+					"text" : "W7.4 Detail JS",
+					"package" : "workshop.template",
+					"object" : "uisDetailJs",
+					"extension" : "txt"
+				}, {
+					"key" : "UIS2_5",
+					"text" : "W7.5 Detail Controller",
+					"package" : "workshop.template",
+					"object" : "uisDeatilController",
+					"extension" : "txt"
+				}, {
+					"key" : "UIS2_6",
+					"text" : "W7.6 Table View JS",
+					"package" : "workshop.template",
+					"object" : "uisTableViewJs",
+					"extension" : "txt"
+				}, {
+					"key" : "UIS2_7",
+					"text" : "W7.7 Table Controller",
+					"package" : "workshop.template",
+					"object" : "uisTableController",
+					"extension" : "txt"
+				}
+			]
+		}, {
+			"key" : "APX_B",
+			"text" : "Appendix B",
+			"steps" : [{
+					"key" : "ST_1",
+					"text" : "1.1 xsaccess",
+					"package" : "workshop.template",
+					"object" : "",
+					"extension" : "xsaccess"
+				}, {
+					"key" : "ST_2",
+					"text" : "1.2 HelloWorld.html",
+					"package" : "workshop.template",
+					"object" : "HelloWorld",
+					"extension" : "html"
+				}
+			]
+		}
+	]
+}

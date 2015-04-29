@@ -1,0 +1,6 @@
+{
+"name" : "Purchase Order Reports",
+"specXMLURL" : "/workshop-uis/uis/xml/report.xml" ,
+"description": "",
+"icon" : ""
+}

@@ -1,0 +1,15 @@
+<Module>
+    <ModulePrefs title="Purchase Order Reports">
+        <Require feature="sap-context"/>
+        <Require feature="gadgetprefs"/>
+        <UserPref name="filterReport" default_value= "ProductCategory" datatype="enum">
+        	<EnumValue value = "PartnerCompanyName" display_value="Partner Company Name" /> 
+        	<EnumValue value = "PartnerCity" display_value="Partner City" />   
+        	<EnumValue value = "PartnerPostalCode" display_value="Partner Postal Code" />          	
+        	<EnumValue value = "ProductCategory" display_value="Product Category" />
+        	<EnumValue value = "ProductId" display_value="Product" />           	     	
+        </UserPref>
+    </ModulePrefs>
+    <Content type="html" href="/workshop-uis/uis/html/report.html">
+    </Content>
+</Module>

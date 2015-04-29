@@ -1,0 +1,6 @@
+{
+    "exposed": true,
+    "authentication": null,
+    "anonymous_connection" : "workshop.admin.selfService.user::selfService",
+    "prevent_xsrf": false
+}

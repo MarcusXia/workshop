@@ -1,0 +1,30 @@
+{
+    "layout": "{\"pagesOrder\":[\"Default\"]}",
+    "description": "Group 00 Fiori LaunchPad",
+    "pages": [
+        {
+            "layout": "{\"appsOrder\":[\"2f49428d-5a21-4dfc-add5-27dfc5b2a54b-1403884798912\"]}",
+            "layoutRef": "Default",
+            "name": "Default",
+            "ID": "Default"
+        }
+    ],
+    "apps": [
+        {
+            "layoutRef": "2f49428d-5a21-4dfc-add5-27dfc5b2a54b-1403884798912",
+            "containerID": "Default",
+            "appTemplateID": "9c8db8b0-07a9-4ffe-8ee4-5eece9513259-1403883426231",
+            "appTemplatePackageID": "workshop.exercises.g00.uis",
+            "appTemplateObjectName": "FioriCatalog",
+            "ID": "2f49428d-5a21-4dfc-add5-27dfc5b2a54b-1403884798912",
+            "type": "local"
+        }
+    ],
+    "properties": [
+        {
+            "key": "sap.hana.uis.site.type",
+            "value": "fiori"
+        }
+    ],
+    "name": "Group 00 Fiori LaunchPad"
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+       <head>
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			  <title>Workshop Exercise Solutions & Templates</title>
+		      <link type="image/x-icon" href="/workshop/admin/ui/exerciseMaster/images/favicon.ico" rel="shortcut icon">
+        	  <link type="image/x-icon" href="/workshop/admin/ui/exerciseMaster/images/favicon.ico" rel="icon"> 			  
+   			  <script src="/sap/ui5/1/resources/sap-ui-core.js"
+                      id="sap-ui-bootstrap"
+                      data-sap-ui-libs="sap.ui.ux3,sap.ui.commons"
+                      data-sap-ui-theme="sap_bluecrystal" >
+              </script>
+              <!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
+			  <script>
+				
+			  function getURLParameter(name) {
+					return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [
+							, null ])[1]);
+				}
+				var workshopId = getURLParameter("workshop");
+				var ShortUrl = '/sap/hana/xs/dt/base/file/workshop/admin/services/';
+				var gUrl = ShortUrl + escape(workshopId) + '.json';
+				var gUserName = '';
+				
+			
+			  </script>
+   			  <script>
+   			         var oExerciseJSON;
+   			         var oShell;
+			         sap.ui.localResources("workshop_exercise_solutions_templates");
+                     var view = sap.ui.view({id:"idShell1", viewName:"workshop_exercise_solutions_templates.NewShell", type:sap.ui.core.mvc.ViewType.JS});
+   			         view.placeAt("content");
+   			  </script>
+
+       </head>
+       <body class="sapUiBody" role="application">
+              <div id="content"></div>
+       </body>
+</html>

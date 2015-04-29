@@ -1,0 +1,7 @@
+<Module>
+    <ModulePrefs title="Purchase Order Details">
+        <Require feature="sap-context"/>
+    </ModulePrefs>
+    <Content type="html" href="/workshop-uis/uis/html/tabs.html">
+    </Content>
+</Module>

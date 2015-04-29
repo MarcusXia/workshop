@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+
+	<Panel headerText="Simple Service Selections" expandable="true"
+		expanded="true">
+		<List width="100%">
+			<InputListItem label="Service Path">
+				<Input id="bpPath" value="{/bpPath}" />
+			</InputListItem>
+			<InputListItem label="Entity Name">
+				<Input id="bpEntity" value="{/bpEntity}" />
+			</InputListItem>
+		</List>
+		<Button text="Execute Service" press="callSimpleService" />
+	</Panel>
+ 	 <core:Fragment fragmentName="odataView.SimpleTable" type="JS" />
+
+</core:FragmentDefinition>

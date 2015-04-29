@@ -1,0 +1,7 @@
+{
+    "exposed": true,
+    "authentication": [{ "method": "LogonTicket" },{ "method" : "Basic" }],
+	"enable_etags" : true,         
+	"cache_control" : "must-revalidate",
+	"prevent_xsrf" : true        
+} 

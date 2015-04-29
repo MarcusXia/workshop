@@ -1,0 +1,6 @@
+{
+"name" : "Purchase Order Details",
+"specXMLURL" : "/workshop-uis/uis/xml/tabs.xml" ,
+"description": "",
+"icon" : ""
+}

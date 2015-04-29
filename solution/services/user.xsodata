@@ -1,0 +1,4 @@
+service namespace "workshop.solution.services" {
+   "sap.hana.democontent.epm.data::EPM.User.Details" as "Users"
+      create using "sap.hana.democontent.epm.Procedures::usersCreateMethod";
+} 

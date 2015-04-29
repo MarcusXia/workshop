@@ -1,0 +1,6 @@
+{
+"name" : "Purchase Order Search",
+"specXMLURL" : "/workshop-uis/uis/xml/search.xml" ,
+"description": "",
+"icon" : ""
+}

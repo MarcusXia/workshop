@@ -1,0 +1,71 @@
+.sapUiSraBrandingBar { 
+    position: absolute; 
+    top: 0; 
+    left: 1rem; 
+    right: 1rem; 
+    height: 0.5rem; 
+    z-index: 99; 
+}    
+#uss_requestAccount_box {
+    padding: 10% 37% 5% 37%;
+    font-family: Calibri;
+    font-size: 1em;
+}
+#uss_successMessage_box {
+    padding: 10% 37% 5% 37%;
+}
+@media only screen and (max-width: 1200px){
+    #uss_requestAccount_box {
+        padding: 10% 27% 5% 27%;
+        transition: padding 1s;
+    }
+    #uss_successMessage_box {
+        padding: 10% 27% 5% 27%;
+        transition: padding 1s;
+    }
+}
+@media only screen and (max-width: 800px){
+    #uss_requestAccount_box {
+        padding: 10% 15% 5% 15%;
+        transition: padding 1s;
+    }
+    #uss_successMessage_box {
+        padding: 10% 15% 5% 15%;
+        transition: padding 1s;
+    }
+}
+#uss_requestAccount_title {
+    font-family: Calibri;
+    font-size: 1.6em;
+}
+#uss_requestAccount_subtitle {
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+#username {
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+#email {
+    padding-top: 1em;
+    padding-bottom: 4em;
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+
+#uss_requestAccount_title_Page2 {
+    font-family: Calibri;
+    font-size: 1.6em;
+}
+#uss_requestAccount_subtitle_Page2 {
+    font-family: Calibri;
+    font-size: 1.2em;
+}
+
+#uss_successPage_Message{
+    padding-top: 3em;
+    font-family: Calibri;
+    font-size: 1em;
+}

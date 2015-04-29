@@ -1,0 +1,15 @@
+namespace workshop.admin.data;
+
+@Schema: 'WORKSHOP'
+context clientInstanceAssignment {
+
+ 	 @Catalog.tableType: #COLUMN
+     Entity Assignments {
+     	key USER_ID: String(60);
+     	CLIENT_IP_ADDRESS: String(30);
+     	ASSIGNMENT_TIMESTAMP: UTCTimestamp;
+     	EMAIL: String(255);
+     	ASSIGNED: String(1);
+     };	
+    
+};

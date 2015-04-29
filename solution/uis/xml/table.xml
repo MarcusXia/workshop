@@ -1,0 +1,7 @@
+<Module>
+    <ModulePrefs title="Purchase Order Worklist">
+        <Require feature="sap-context"/>
+    </ModulePrefs>
+    <Content type="html" href="/workshop-uis/uis/html/table.html">
+    </Content>
+</Module>

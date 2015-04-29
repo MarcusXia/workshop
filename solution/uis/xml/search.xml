@@ -1,0 +1,7 @@
+<Module>
+    <ModulePrefs title="Purchase Order Search">
+        <Require feature="sap-context"/>
+    </ModulePrefs>
+    <Content type="html" href="/workshop-uis/uis/html/search.html">
+    </Content>
+</Module>

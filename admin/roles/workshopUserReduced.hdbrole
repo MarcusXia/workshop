@@ -1,0 +1,228 @@
+role workshop.admin.roles::workshopUserReduced 
+    extends role sap.hana.xs.debugger::Debugger,
+                 sap.hana.uis.db::SITE_DESIGNER,                 
+                 sap.hana.ide.core.roles::Consumer,
+                 sap.hana.ide.roles::TraceViewer,
+                 sap.hana.ide.roles::CatalogDeveloper,
+                 sap.hana.ide.roles::EditorDeveloper,
+                 sap.hana.admin.roles::Administrator,
+                 sap.hana.testtools.common::TestExecute
+              
+{
+	
+	package sap: REPO.READ;
+	//HALM
+	application privilege: sap.hana.xs.lm::Configure;
+    application privilege: sap.hana.xs.lm::Administrator;
+    system privilege: INIFILE ADMIN;
+    system privilege: REPO.MAINTAIN_DELIVERY_UNITS;
+    system privilege: REPO.CONFIGURE;
+//  package ".REPO_PACKAGE_ROOT" : REPO.READ;
+
+    catalog sql object "_SYS_REPO"."PRODUCTS": UPDATE, INSERT, DELETE;
+    catalog sql object "_SYS_REPO"."PRODUCT_INSTANCES": UPDATE, INSERT, DELETE;
+    catalog sql object "_SYS_REPO"."DELIVERY_UNITS": UPDATE, INSERT, DELETE;
+    catalog sql object "_SYS_REPO"."SC_2_INSTANCE_MAPPING": UPDATE, INSERT, DELETE;
+    catalog sql object "_SYS_REPO"."PACKAGE_CATALOG": UPDATE;
+    catalog sql object "_SYS_REPO"."LEGAL_DEL_UNIT_DEPENDENCIES": DELETE, UPDATE, SELECT;
+    package sap.hana.xs.lm: REPO.EDIT_NATIVE_OBJECTS, REPO.ACTIVATE_NATIVE_OBJECTS, REPO.EDIT_IMPORTED_OBJECTS, REPO.ACTIVATE_IMPORTED_OBJECTS;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::SYSTEM": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::TRANSPORT_ROUTE": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::TRANSPORT_ROUTE_DU": SELECT, INSERT, UPDATE, DELETE;
+    catalog schema "SAP_XS_LM": SELECT, INSERT, UPDATE, DELETE;
+    application privilege: sap.hana.xs.lm::ExecuteTransport;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::LOG_SYNC": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::PROCESS": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::SYSTEM_STATE": SELECT, INSERT, UPDATE, DELETE;
+    application privilege: sap.hana.xs.lm::Transport;
+    application privilege: sap.hana.xs.lm::ExportToCTS;
+    system privilege: REPO.EXPORT, REPO.IMPORT;
+    system privilege: REPO.MODIFY_CHANGE;
+    system privilege: REPO.MODIFY_OWN_CONTRIBUTION;
+    system privilege: REPO.MODIFY_FOREIGN_CONTRIBUTION;
+
+    package sap.hana.xs.lm: REPO.READ;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::ACTION_LOG": SELECT, INSERT, UPDATE, DELETE;
+
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::SYSTEM": SELECT;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::ID_SEQ": SELECT;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::CONFIGURATION": SELECT,INSERT, UPDATE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::TRANSPORT_CONTENT": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::TRANSPORT_ROUTE": SELECT;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::TRANSPORT_ROUTE_DU": SELECT;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::IMPORTED_DU": SELECT, INSERT, UPDATE;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::CONF_HISTORY": SELECT, INSERT;
+    
+    // required for product transport
+    catalog sql object "_SYS_REPO"."PRODUCTS": SELECT, INSERT, UPDATE;
+    catalog sql object "_SYS_REPO"."PRODUCT_INSTANCES": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "_SYS_REPO"."DELIVERY_UNITS": SELECT;
+    catalog sql object "_SYS_REPO"."SC_2_INSTANCE_MAPPING": SELECT, INSERT, UPDATE, DELETE;
+    catalog sql object "_SYS_REPO"."CHANGES": SELECT;
+    catalog sql object "_SYS_REPO"."ACTIVE_OBJECT": SELECT;
+    catalog sql object "_SYS_REPO"."INACTIVE_OBJECT": SELECT;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::SYSTEM_STATE": SELECT, INSERT, UPDATE, DELETE;
+    
+    application privilege: sap.hana.xs.lm::Display;
+    application privilege: sap.hana.xs.lm::View;
+    
+    catalog schema "SAP_XS_LM": SELECT;
+    package sap.hana.xs.lm: REPO.READ;
+
+    //package ".REPO_PACKAGE_ROOT" : REPO.READ; 
+    catalog sql object "_SYS_REPO"."PRODUCTS": SELECT;
+    catalog sql object "_SYS_REPO"."PRODUCT_INSTANCES": SELECT;
+    catalog sql object "_SYS_REPO"."DELIVERY_UNITS": SELECT;
+    catalog sql object "_SYS_REPO"."SC_2_INSTANCE_MAPPING": SELECT;
+    catalog sql object "_SYS_REPO"."ACTIVE_OBJECTCROSSREF": SELECT;
+    catalog sql object "_SYS_REPO"."PACKAGE_CATALOG": SELECT;
+    catalog sql object "_SYS_REPO"."ACTIVE_OBJECT_TEXT_CONTENT": SELECT;
+    catalog sql object "_SYS_REPO"."ACTIVE_CONTENT_TEXT_CONTENT": SELECT;
+    catalog sql object "SAP_XS_LM"."sap.hana.xs.lm.db::SYSTEM_STATE": SELECT, INSERT, UPDATE, DELETE;
+	
+	application privilege: sap.hana.xs.lm::DevelopmentExpert;
+    system privilege: REPO.MODIFY_CHANGE;
+    system privilege: REPO.MODIFY_FOREIGN_CONTRIBUTION;
+   	application privilege: sap.hana.xs.lm::Developer;
+    system privilege: REPO.MODIFY_OWN_CONTRIBUTION;
+  
+  //XSAdmin Roles
+    application privilege: sap.hana.xs.admin::HTTPDestAdmin;
+	application privilege: sap.hana.xs.admin::HTTPDestView;    
+    system privilege: TRUST ADMIN;
+	catalog sql object "_SYS_XS"."HTTP_DESTINATIONS": SELECT, INSERT, UPDATE, DELETE;
+	//package ".REPO_PACKAGE_ROOT" : REPO.EDIT_NATIVE_OBJECTS, REPO.ACTIVATE_NATIVE_OBJECTS, REPO.MAINTAIN_NATIVE_PACKAGES;
+    application privilege: sap.hana.xs.admin::JobAdmin;
+    catalog sql object "_SYS_XS"."JOBS": UPDATE;
+    catalog sql object "_SYS_XS"."JOB_SCHEDULES": INSERT, DELETE;
+    catalog sql object "_SYS_XS"."JOB_SCHEDULES_SEQ": SELECT;
+    application privilege: sap.hana.xs.admin::JobView;
+    catalog sql object "_SYS_XS"."JOBS": SELECT;
+    catalog sql object "_SYS_XS"."JOB_SCHEDULES": SELECT;
+    catalog sql object "_SYS_XS"."JOB_LOG": SELECT;
+    //package ".REPO_PACKAGE_ROOT" : REPO.READ; 
+    application privilege: sap.hana.xs.admin::RuntimeConfAdmin;
+	catalog sql object "_SYS_XS"."RUNTIME_CONFIGURATION": INSERT, UPDATE, DELETE;
+    application privilege: sap.hana.xs.admin::RuntimeConfView;
+	catalog sql object "_SYS_XS"."RUNTIME_CONFIGURATION": SELECT;
+	//package ".REPO_PACKAGE_ROOT" : REPO.READ;
+	system privilege: CATALOG READ;
+    application privilege: sap.hana.xs.admin::SQLCCAdmin;
+    catalog sql object "_SYS_XS"."SQL_CONNECTIONS": UPDATE;
+    application privilege: sap.hana.xs.admin::SQLCCView;
+    catalog sql object "_SYS_XS"."SQL_CONNECTIONS": SELECT;
+    //package ".REPO_PACKAGE_ROOT" : REPO.READ; 
+
+
+	//Job Scheduling
+	application privilege: sap.hana.xs.admin::JobSchedulerAdmin;
+    sql object sap.hana.xs.admin.jobs.server.db:writeSchedulerIni.hdbprocedure: EXECUTE;   
+    application privilege: sap.hana.xs.admin::JobAdmin;
+    catalog sql object "_SYS_XS"."JOBS": UPDATE;
+    catalog sql object "_SYS_XS"."JOB_SCHEDULES": INSERT, DELETE, UPDATE;
+    catalog sql object "_SYS_XS"."JOB_SCHEDULES_SEQ": SELECT;
+    catalog sql object "SYS"."DUMMY": SELECT;
+    catalog sql object "SYS"."PROCEDURE_PARAMETERS": SELECT;
+    application privilege: sap.hana.xs.admin::JobView;
+    catalog sql object "_SYS_XS"."JOBS": SELECT;
+    catalog sql object "_SYS_XS"."JOB_SCHEDULES": SELECT;
+    catalog sql object "_SYS_XS"."JOB_LOG": SELECT;
+    catalog sql object "HANA_XS_BASE"."sap.hana.xs.admin.jobs.server.db::JOBS": SELECT;
+    catalog sql object "HANA_XS_BASE"."sap.hana.xs.admin.jobs.server.db::SCHEDULES": SELECT;
+    catalog sql object "HANA_XS_BASE"."sap.hana.xs.admin.jobs.server.db::DISTINCT_USER": SELECT;
+    catalog sql object "HANA_XS_BASE"."sap.hana.xs.formLogin.profile.db::USER_PREFERENCES": SELECT;
+    sql object sap.hana.xs.admin.jobs.server.db:readSchedulerIni.hdbprocedure: EXECUTE;
+    sql object sap.hana.xs.admin.db:systemDetails.hdbtablefunction: EXECUTE;
+    sql object sap.hana.xs.admin.jobs.server.db:LOGSONLY.hdbtablefunction: EXECUTE;
+    sql object sap.hana.xs.admin.jobs.server.db:SCHEDULESONLY.hdbtablefunction: EXECUTE;
+    sql object sap.hana.xs.admin.jobs.server.db::LOGS: SELECT;
+    sql object sap.hana.xs.admin.jobs.server.db::DISTINCT_SCHEDULE_ID: SELECT;
+    sql object sap.hana.xs.admin.jobs.server.db::DISTINCT_LOG_ID: SELECT;
+    sql object sap.hana.xs.admin.jobs.server.db::DISTINCT_SCHEDULE_STATUS: SELECT;
+    sql object sap.hana.xs.admin.jobs.server.db::DISTINCT_LOG_STATUS: SELECT;
+    
+    
+	//EPM Next Roles
+	package sap.hana.democontent.epmNext: REPO.READ;
+		
+	schema sap.hana.democontent.epmNext.data:SAP_HANA_EPM_NEXT.hdbschema: SELECT,EXECUTE,UPDATE,INSERT,DELETE,DEBUG;
+	
+	application privilege: sap.hana.democontent.epmNext::Basic; 
+	application privilege: "sap.hana.uis.privileges::AppSiteAccess:All";
+	
+	catalog schema "_SYS_BIC": SELECT , EXECUTE;
+	catalog schema "_SYS_BI": SELECT;
+	
+	analytic privilege: sap.hana.democontent.epmNext.models:AP_PURCHASE_ORDER.analyticprivilege;
+	analytic privilege: sap.hana.democontent.epmNext.models:AP_SALES_ORDER.analyticprivilege;
+	
+    analytic privilege: sap.hana.democontent.epmNext.spatial.models:SPATIAL.analyticprivilege;
+    	
+    catalog sql object "SAP_HANA_EPM_NEXT"."sap.hana.democontent.epmNext.models::SALES_ORDER_WORKLIST":SELECT ;
+    catalog sql object "SAP_HANA_EPM_NEXT"."sap.hana.democontent.epmNext.data::SO.Item":REFERENCES; 		
+    
+	//EPM Roles        
+	package sap.hana.democontent.epm: REPO.READ;
+		
+	schema sap.hana.democontent.epm.data:SAP_HANA_DEMO.hdbschema: SELECT,EXECUTE;
+	
+	application privilege: sap.hana.democontent.epm::Basic;  
+	
+	system privilege: DATA ADMIN;
+	
+	analytic privilege: sap.hana.democontent.epm.models:AP_PURCHASE_ORDER.analyticprivilege;	
+	
+	//Web IDE Roles
+
+
+    //package sap.hana: REPO.READ;
+    application privilege: sap.hana.ide::LandingPage;
+    application privilege: sap.hana.ide::Catalog;    
+    application privilege: sap.hana.ide::Editor;
+    application privilege: sap.hana.ide::Security;
+
+    //package sap.hana: REPO.READ;
+    system privilege: REPO.EXPORT;
+    system privilege: REPO.MODIFY_CHANGE;
+    system privilege: REPO.MODIFY_OWN_CONTRIBUTION; 
+    catalog sql object "_SYS_REPO"."GRANT_SCHEMA_PRIVILEGE_ON_ACTIVATED_CONTENT": EXECUTE;
+    catalog sql object "SYS"."REPOSITORY_REST": EXECUTE;    
+ 
+	//Actual Workshop Content
+	package workshop.exercises: REPO.READ, 
+	                  REPO.EDIT_NATIVE_OBJECTS, 
+	                  REPO.ACTIVATE_NATIVE_OBJECTS, 
+	                  REPO.MAINTAIN_NATIVE_PACKAGES,
+	                  REPO.EDIT_IMPORTED_OBJECTS, 
+	                  REPO.ACTIVATE_IMPORTED_OBJECTS, 
+	                  REPO.MAINTAIN_IMPORTED_PACKAGES;
+	                  		                  
+	    package system-local: REPO.READ, 
+	                  REPO.EDIT_NATIVE_OBJECTS, 
+	                  REPO.ACTIVATE_NATIVE_OBJECTS, 
+	                  REPO.MAINTAIN_NATIVE_PACKAGES,
+	                  REPO.EDIT_IMPORTED_OBJECTS, 
+	                  REPO.ACTIVATE_IMPORTED_OBJECTS, 
+	                  REPO.MAINTAIN_IMPORTED_PACKAGES;	
+	package workshop: REPO.READ;                  
+	package workshop.admin: REPO.READ;
+	package workshop.solution: REPO.READ;
+	package workshop.template: REPO.READ;                  
+    package tmp: REPO.MAINTAIN_NATIVE_PACKAGES, REPO.EDIT_NATIVE_OBJECTS, REPO.ACTIVATE_NATIVE_OBJECTS, REPO.READ;	                  	                           
+    catalog sql object "_SYS_REPO"."GRANT_PRIVILEGE_ON_ACTIVATED_CONTENT": EXECUTE; 
+    catalog sql object "_SYS_REPO"."GRANT_SCHEMA_PRIVILEGE_ON_ACTIVATED_CONTENT": EXECUTE; 	    	                           
+    catalog sql object "SYS"."REPOSITORY_REST": EXECUTE;
+    catalog schema "_SYS_BIC": EXECUTE, CREATE ANY, ALTER, DROP, EXECUTE, INSERT, UPDATE, DELETE, INDEX, SELECT, DEBUG;
+    catalog schema "_SYS_BI": EXECUTE, CREATE ANY, ALTER, DROP, EXECUTE, INSERT, UPDATE, DELETE, INDEX, SELECT;
+    catalog schema "WORKSHOP": INSERT, UPDATE, EXECUTE, SELECT, DEBUG; 
+    catalog schema "_SYS_REPO": SELECT;    
+
+    catalog sql object "_SYS_REPO"."GRANT_ACTIVATED_ROLE": EXECUTE; 
+    catalog sql object "SYS"."DEBUG": EXECUTE;	
+ 	system privilege: USER ADMIN, CATALOG READ, CREATE SCHEMA, DATA ADMIN, DEVELOPMENT, EXPORT, IMPORT, LOG ADMIN, MONITOR ADMIN, ROLE ADMIN, SERVICE ADMIN, TRACE ADMIN, TRUST ADMIN, USER ADMIN;
+ 	system privilege: REPO.EXPORT, REPO.IMPORT, REPO.MAINTAIN_DELIVERY_UNITS, REPO.MODIFY_CHANGE, REPO.MODIFY_OWN_CONTRIBUTION;
+ 	
+ 	application privilege: "sap.hana.uis.privileges::AppSiteAccess:All";
+
+  	catalog analytic privilege: "_SYS_BI_CP_ALL"; 
+}

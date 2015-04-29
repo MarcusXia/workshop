@@ -1,0 +1,350 @@
+{
+    "exercises":[
+        {
+            "key":"EX1",
+            "text":"Exercise 1",
+            "steps":[
+                {
+                    "key":"EX1_2", 
+                    "text":"1.2 Privileges",
+                    "package":"workshop.solution",
+                    "object":"",
+                    "extension":"xsprivileges"
+                },
+                {
+                    "key":"EX1_3",
+                    "text":"1.3 Access Control",
+                    "package":"workshop.solution",
+                    "object":"",
+                    "extension":"xsaccess"
+                },
+                {
+                    "key":"EX1_4",
+                    "text":"1.4 Hello World",
+                    "package":"workshop.solution",
+                    "object":"HelloWorld",
+                    "extension":"html"
+                }
+            ]
+        },
+        {
+            "key":"EX2",
+            "text":"Exercise 2",
+            "steps":[
+                {
+                    "key":"EX2_1",
+                    "text":"2.1 Schema",
+                    "package":"workshop.template",
+                    "object":"schema",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX2_2A",
+                    "text":"2.2A Header Table",
+                    "package":"workshop.template",
+                    "object":"header",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX2_2B",
+                    "text":"2.2B Item Table",
+                    "package":"workshop.template",
+                    "object":"item",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX2_3",
+                    "text":"2.3 Sequence",
+                    "package":"workshop.template",
+                    "object":"orderId",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX2_4",
+                    "text":"2.4 View",
+                    "package":"workshop.template",
+                    "object":"ordersExt",
+                    "extension":"txt"
+                }
+            ]
+        },
+        {
+            "key":"EX3",
+            "text":"Exercise 3",
+            "steps":[
+                {
+                    "key":"EX3_1A",
+                    "text":"3.1A User Role",
+                    "package":"workshop.template",
+                    "object":"workshopUser",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX3_1B",
+                    "text":"3.1B Admin Role",
+                    "package":"workshop.template",
+                    "object":"workshopAdmin",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX3_2",
+                    "text":"3.2 Role Grant",
+                    "package":"workshop.template",
+                    "object":"grantRole",
+                    "extension":"txt"
+                }
+            ]
+        },
+        {
+            "key":"EX4",
+            "text":"Exercise 4",
+            "steps":[
+                {
+                    "key":"EX4_1A",
+                    "text":"4.1A Header CSV",
+                    "package":"workshop.template",
+                    "object":"header_csv",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX4_1B",
+                    "text":"4.1B Header TID",
+                    "package":"workshop.template",
+                    "object":"header_tid",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX4_1C",
+                    "text":"4.1C Header TIM",
+                    "package":"workshop.template",
+                    "object":"header_tim",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX4_2A",
+                    "text":"4.2A Item CSV",
+                    "package":"workshop.template",
+                    "object":"item_csv",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX4_2B",
+                    "text":"4.2B Item TID",
+                    "package":"workshop.template",
+                    "object":"item_tid",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX4_2C",
+                    "text":"4.2C Item TIM",
+                    "package":"workshop.template",
+                    "object":"item_tim",
+                    "extension":"txt"
+                }
+            ]
+        },
+        {
+            "key":"EX6",
+            "text":"Exercise 6",
+            "steps":[
+                {
+                    "key":"EX6_1A",
+                    "text":"6.1A Table Type",
+                    "package":"workshop.template",
+                    "object":"SQLScriptType1",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_1B",
+                    "text":"6.1B Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript1",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_1C",
+                    "text":"6.1C Test Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript1Test",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_2A",
+                    "text":"6.2A Table Type",
+                    "package":"workshop.template",
+                    "object":"SQLScriptType2",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_2B",
+                    "text":"6.2B Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript2",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_2C",
+                    "text":"6.2C Test Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript2Test",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_3A",
+                    "text":"6.3A Table Type",
+                    "package":"workshop.template",
+                    "object":"SQLScriptType3",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_3B",
+                    "text":"6.3B Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript3",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_3C",
+                    "text":"6.3C Test Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript3Test",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX6_4",
+                    "text":"6.4 Procedure",
+                    "package":"workshop.template",
+                    "object":"SQLScript4",
+                    "extension":"txt"
+                }
+            ]
+        },
+        {
+            "key":"EX7",
+            "text":"Exercise 7",
+            "steps":[
+                {
+                    "key":"EX7_2",
+                    "text":"7.2 HelloWorld.view.js",
+                    "package":"workshop.template",
+                    "object":"HelloWorld.view",
+                    "extension":"txt"
+                }
+            ]
+        },
+        {
+            "key":"EX8",
+            "text":"Exercise 8",
+            "steps":[
+                {
+                    "key":"EX8_1",
+                    "text":"8.1 Simple XSODATA",
+                    "package":"workshop.template",
+                    "object":"businessPartners1",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX8_2",
+                    "text":"8.2 XSODATA Multiple",
+                    "package":"workshop.template",
+                    "object":"businessPartners2",
+                    "extension":"txt"
+                },
+                {
+                    "key":"EX8_3",
+                    "text":"8.3 XSODATA UI",
+                    "package":"workshop.template",
+                    "object":"xsodataTest",
+                    "extension":"txt"
+                }
+            ]
+        },
+       {
+            "key":"EX9",
+            "text":"Exercise 9",
+            "steps":[
+                {
+                    "key":"EX9_1",
+                    "text":"9.1 Simple XSJS",
+                    "package":"workshop.solution.services",
+                    "object":"workshop1",
+                    "extension":"xsjs"
+                },
+                {
+                    "key":"EX9_2",
+                    "text":"9.2 Extended XSJS",
+                    "package":"workshop.solution.services",
+                    "object":"workshop2",
+                    "extension":"xsjs"
+                },
+                {
+                    "key":"EX9_3A",
+                    "text":"9.3A xsjsController.js",
+                    "package":"workshop.template",
+                    "object":"xsjsTest.controller",
+                    "extension":"txt"
+                },
+                                                {
+                    "key":"EX9_3B",
+                    "text":"9.3B xsjsView.js",
+                    "package":"workshop.template",
+                    "object":"xsjsTest.view",
+                    "extension":"txt"
+                }
+
+            ]
+        },
+	{
+            "key":"EX12",
+            "text":"Exercise 12",
+            "steps":[
+                {
+                    "key":"EX12_1A",
+                    "text":"12.1A Sample XML",
+                    "package":"workshop.template",
+                    "object":"uisxml",
+                    "extension":"txt"
+                }
+                
+
+            ]
+        },              
+     {
+            "key":"EX13",
+            "text":"Exercise 13",
+            "steps":[
+                {
+                    "key":"EX13_4A",
+                    "text":"13.4A poWorklist",
+                    "package":"workshop.template.services",
+                    "object":"poWorklist",
+                    "extension":"xsodata"
+                },
+                {
+                    "key":"EX13_4B",
+                    "text":"13.4B poWorklistJoin",
+                    "package":"workshop.template.services",
+                    "object":"poWorklistJoin",
+                    "extension":"xsodata"
+                },
+                {
+                    "key":"EX13_5A",
+                    "text":"13.5A poWorklistQuery",
+                    "package":"workshop.template.services",
+                    "object":"poWorklistQuery",
+                    "extension":"xsjs"
+                },
+                                                {
+                    "key":"EX13_5B",
+                    "text":"13.5B poWorklistUpdate",
+                    "package":"workshop.template.services",
+                    "object":"poWorklistUpdate",
+                    "extension":"xsjs"
+                }
+
+            ]
+        }
+ 		                               
+    
+    ]
+}

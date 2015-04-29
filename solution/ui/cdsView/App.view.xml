@@ -1,0 +1,195 @@
+<core:View
+	controllerName="cdsView.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core" >
+	<ScrollContainer
+    height="100%"
+    width="100%"
+    horizontal="true"
+    vertical="true" >
+    <Panel 
+	   headerText="Schema Selections"
+	   expandable="true"
+	   expanded="true">
+	   <List width = "400px">
+	       <InputListItem label="Schema">
+	           <Input id="Schema" value="{/Schema}" />
+	       </InputListItem>
+	   </List>
+	   <Button text="Create Data" press="createData" />
+	</Panel>   
+	<Panel 
+	   headerText="Header Data"
+	   expandable="true"
+	   expanded="true">
+	    <Table 
+	        tableId="headerTable"
+	        growingThreshold="10"
+	        growing="true"
+	        items="{
+                path: 'header>/header',
+                sorter: { path: 'PURCHASEORDERID' }}"
+            >
+        <columns>
+            <Column>
+                <header><Label text="PURCHASEORDERID" /></header>
+            </Column>
+            <Column>
+                <header><Label text="PARTNER" /></header>
+            </Column>
+            <Column>
+                <header><Label text="CURRENCY" /></header>
+            </Column>
+            <Column>
+                <header><Label text="GROSSAMOUNT" /></header>
+            </Column>    
+            <Column>
+                <header><Label text="NETAMOUNT" /></header>
+            </Column> 
+            <Column>
+                <header><Label text="TAXAMOUNT" /></header>
+            </Column>             
+        </columns>
+         <items>
+             <ColumnListItem>
+                 <cells>
+                     <Input 
+                        value="{path: 'header>PURCHASEORDERID'}"
+                        name="PURCHASEORDERID"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'header>PARTNER'}"
+                        name="PARTNER"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'header>CURRENCY'}"
+                        name="CURRENCY"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'header>GROSSAMOUNT'}"
+                        name="GROSSAMOUNT"
+                        editable="false">
+                     </Input> 
+                     <Input 
+                        value="{path: 'header>NETAMOUNT'}"
+                        name="NETAMOUNT"
+                        editable="false">
+                     </Input>     
+                     <Input 
+                        value="{path: 'header>TAXAMOUNT'}"
+                        name="TAXAMOUNT"
+                        editable="false">
+                     </Input>                                                            
+                 </cells>
+             </ColumnListItem>
+         </items>    
+	    </Table>
+	</Panel>
+	<Panel 
+	   headerText="Item Data"
+	   expandable="true"
+	   expanded="true">
+	    <Table 
+	        tableId="itemTable"
+	        growingThreshold="10"
+	        growing="true"
+	        items="{
+                path: 'item>/item',
+                sorter: { path: 'PURCHASEORDERID' }}"
+            >
+        <columns>
+            <Column>
+                <header><Label text="PURCHASEORDERID" /></header>
+            </Column>
+            <Column>
+                <header><Label text="PURCHASEORDERITEM" /></header>
+            </Column>            
+            <Column>
+                <header><Label text="PRODUCT" /></header>
+            </Column>
+            <Column>
+                <header><Label text="CURRENCY" /></header>
+            </Column>
+            <Column>
+                <header><Label text="GROSSAMOUNT" /></header>
+            </Column>    
+            <Column>
+                <header><Label text="NETAMOUNT" /></header>
+            </Column> 
+            <Column>
+                <header><Label text="TAXAMOUNT" /></header>
+            </Column>   
+            <Column>
+                <header><Label text="QUANTITY" /></header>
+            </Column>  
+            <Column>
+                <header><Label text="QUANTITYUNIT" /></header>
+            </Column>
+            <Column>
+                <header><Label text="DELIVERYDATE" /></header>
+            </Column>                                              
+        </columns>
+         <items>
+             <ColumnListItem>
+                 <cells>
+                     <Input 
+                        value="{path: 'item>PURCHASEORDERID'}"
+                        name="PURCHASEORDERID"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'item>PURCHASEORDERITEM'}"
+                        name="PURCHASEORDERITEM"
+                        editable="false">
+                     </Input>                     
+                     <Input 
+                        value="{path: 'item>PRODUCT'}"
+                        name="PRODUCT"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'item>CURRENCY'}"
+                        name="CURRENCY"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'item>GROSSAMOUNT'}"
+                        name="GROSSAMOUNT"
+                        editable="false">
+                     </Input> 
+                     <Input 
+                        value="{path: 'item>NETAMOUNT'}"
+                        name="NETAMOUNT"
+                        editable="false">
+                     </Input>     
+                     <Input 
+                        value="{path: 'item>TAXAMOUNT'}"
+                        name="TAXAMOUNT"
+                        editable="false">
+                     </Input>   
+                     <Input 
+                        value="{path: 'item>QUANTITY'}"
+                        name="QUANTITY"
+                        editable="false">
+                     </Input> 
+                     <Input 
+                        value="{path: 'item>QUANTITYUNIT'}"
+                        name="QUANTITYUNIT"
+                        editable="false">
+                     </Input>
+                     <Input 
+                        value="{path: 'item>DELIVERYDATE'}"
+                        name="DELIVERYDATE"
+                        editable="false">
+                     </Input>                                                                                                                         
+                 </cells>
+             </ColumnListItem>
+         </items>    
+	    </Table>
+	</Panel>	
+   </ScrollContainer>
+</core:View>

@@ -1,0 +1,6 @@
+{
+"name" : "Sample",
+"specXMLURL" : "/workshop-uis/uis/sample.xml" ,
+"description": "This is a sample widget",
+"icon" : ""
+}

@@ -1,0 +1,29 @@
+PROCEDURE "WORKSHOP"."workshop.admin.procedures::cleanUpCDSObjects" (
+    IN PACKAGE NVARCHAR(256),
+    IN SUBPACKAGES TINYINT DEFAULT 1  ) 
+	LANGUAGE SQLSCRIPT
+	SQL SECURITY INVOKER 
+	AS
+	--TRUE TINYINT := 1;
+	--FALSE TINYINT := 0;
+BEGIN
+/***************************** 
+	Write your procedure logic 
+ *****************************/
+  	DELETE FROM  "_SYS_RT"."CDS_ARTIFACT"            where "name.namespace"         = :package;    
+ 	DELETE FROM  "_SYS_RT"."CDS_ANNOTATION_VALUE"    where "artifactName.namespace" = :package;   
+ 	DELETE FROM  "_SYS_RT"."CDS_SCALAR_TYPE"         where "name.namespace"         = :package;   
+ 	DELETE FROM  "_SYS_RT"."CDS_STRUCTURE"           where "name.namespace"         = :package;
+ 	DELETE FROM  "_SYS_RT"."CDS_STRUCTURE_COMPONENT" where "name.namespace"         = :package;
+ 	
+ IF subpackages = 1 THEN
+  DECLARE SUB_NAME NVARCHAR(256);
+  SUB_NAME := CONCAT(PACKAGE, '.%');
+  	DELETE FROM  "_SYS_RT"."CDS_ARTIFACT"            where "name.namespace"         LIKE :SUB_NAME;    
+ 	DELETE FROM  "_SYS_RT"."CDS_ANNOTATION_VALUE"    where "artifactName.namespace" LIKE :SUB_NAME; 
+ 	DELETE FROM  "_SYS_RT"."CDS_SCALAR_TYPE"         where "name.namespace"         LIKE :SUB_NAME;  
+ 	DELETE FROM  "_SYS_RT"."CDS_STRUCTURE"           where "name.namespace"         LIKE :SUB_NAME;
+ 	DELETE FROM  "_SYS_RT"."CDS_STRUCTURE_COMPONENT" where "name.namespace"         LIKE :SUB_NAME;
+ END IF;
+
+END;

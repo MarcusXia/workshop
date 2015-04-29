@@ -1,0 +1,64 @@
+{
+    "name": "Fiori G00 Catalog",
+    "type": "fiori",
+    "widgets": [
+        {
+            "type": "chips.tiles.applauncherdynamic.DynamicTile",
+            "ID": "9c8db8b0-07a9-4ffe-8ee4-5eece9513259-1403883426231",
+            "properties": [
+                {
+                    "key": "display_icon_url",
+                    "value": ""
+                },
+                {
+                    "key": "display_title_text",
+                    "value": "Purchase Order Worklist"
+                },
+                {
+                    "key": "display_subtitle_text",
+                    "value": "Group 00 Example"
+                },
+                {
+                    "key": "display_info_text",
+                    "value": ""
+                },
+                {
+                    "key": "display_number_unit",
+                    "value": "Purchase Orders"
+                },
+                {
+                    "key": "service_url",
+                    "value": "/sap/hana/democontent/epmNext/services/poWorklist.xsodata/PO_WORKLIST/$count?$filter=((LifecycleDesc%20eq%20%27New%27))"
+                },
+                {
+                    "key": "service_refresh_interval",
+                    "value": "5"
+                },
+                {
+                    "key": "navigation_use_semantic_object",
+                    "value": "false"
+                },
+                {
+                    "key": "navigation_target_url",
+                    "value": "/sap/hana/democontent/epmNext/ui/poworklist/poWorklist.html"
+                },
+                {
+                    "key": "navigation_semantic_object",
+                    "value": ""
+                },
+                {
+                    "key": "navigation_semantic_action",
+                    "value": ""
+                },
+                {
+                    "key": "navigation_semantic_parameters",
+                    "value": ""
+                },
+                {
+                    "key": "display_search_keywords",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}
