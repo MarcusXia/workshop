@@ -3,7 +3,8 @@ sap.ui.controller("cdsView.App", {
 	 onInit : function(){
          var model = new sap.ui.model.json.JSONModel({});
          sap.ui.getCore().setModel(model);
-         this.getView().addStyleClass("sapUiSizeCompact"); // make everything inside this View appear in Compact mode
+         this.getView().setModel(model);
+		 this.getView().addStyleClass("sapUiSizeCompact"); // make everything inside this View appear in Compact mode
 
      },
 	createData: function(){
